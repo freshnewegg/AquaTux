@@ -101,6 +101,9 @@ public:
 class MDA_TASK_GATE : public MDA_TASK_BASE {
 
 public:
+	//The ActuatorOutput is the movement, so passing in the control over the movement
+	//imageinput return the eyes top camera or bot
+	//attitude input give the pitch yaw and other stuff
 	MDA_TASK_GATE (AttitudeInput* a, ImageInput* i, ActuatorOutput* o);
 	~MDA_TASK_GATE ();
 
